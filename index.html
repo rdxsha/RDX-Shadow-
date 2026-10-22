@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080b18">
+<title>RDX Shadow | SK Ibrahim — Programmer, App Modder & Video Editor</title>
+<meta name="description" content="Official personal portfolio of RDX Shadow (SK Ibrahim), a Python programmer, app modder, video editor and ethical hacking enthusiast.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="RDX Shadow | SK Ibrahim">
+<meta property="og:description" content="Code with purpose. Create with vision. Keep learning.">
+<meta property="og:image" content="https://i.ibb.co/8LmbqSLv/IMG-20251231-221822-007.jpg">
+<meta property="og:type" content="website">
+<style>
+:root{--bg:#080b18;--panel:#11172a;--panel2:#151d34;--text:#f4f7ff;--muted:#aab5cf;--cyan:#58e6ff;--violet:#9a7bff;--line:rgba(255,255,255,.1)}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 15% 0%,rgba(89,65,190,.22),transparent 36%),radial-gradient(ellipse at 90% 20%,rgba(38,205,226,.12),transparent 28%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(8,11,24,.8);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-size:1.18rem;font-weight:900;letter-spacing:.08em}.brand span{color:var(--cyan)}
+nav{display:flex;gap:24px;color:var(--muted);font-size:.92rem}nav a:hover{color:var(--cyan)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center;padding:76px 0 82px;min-height:570px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--cyan);border:1px solid rgba(88,230,255,.25);background:rgba(88,230,255,.07);padding:7px 13px;border-radius:99px;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;font-weight:800}
+h1{font-size:clamp(3rem,7vw,5.6rem);line-height:.98;letter-spacing:-.065em;margin:22px 0 18px}
+h1 em{font-style:normal;background:linear-gradient(90deg,var(--cyan),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--muted);font-size:1.1rem;max-width:600px}
+.buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:12px;padding:12px 18px;font-weight:800;border:1px solid var(--line);transition:.2s}
+.btn.primary{background:linear-gradient(100deg,var(--cyan),#a4a2ff);color:#08101e;border:0}.btn:hover{transform:translateY(-2px)}
+.hero-photo{position:relative;max-width:390px;margin:auto;width:100%}
+.hero-photo:before{content:"";position:absolute;inset:-14px;border:1px solid rgba(88,230,255,.38);border-radius:28px;transform:rotate(3deg);pointer-events:none}
+.hero-carousel{position:relative;overflow:hidden;border-radius:25px;border:1px solid rgba(255,255,255,.17);background:#10172b;box-shadow:0 30px 90px rgba(0,0,0,.42)}
+.carousel-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain;touch-action:pan-x;scroll-behavior:smooth}
+.carousel-track::-webkit-scrollbar{display:none}
+.hero-slide{display:block;flex:0 0 100%;width:100%;height:470px;object-fit:cover;object-position:center 28%;scroll-snap-align:center}
+.carousel-arrow{position:absolute;z-index:3;top:48%;transform:translateY(-50%);width:43px;height:43px;border:1px solid #ffffff55;border-radius:50%;background:#080b18bb;color:#fff;font-size:2rem;line-height:1;display:grid;place-items:center;cursor:pointer;backdrop-filter:blur(10px);transition:.2s}
+.carousel-arrow:hover{background:var(--cyan);color:#07101c}.carousel-arrow.prev{left:12px}.carousel-arrow.next{right:12px}
+.carousel-dots{position:absolute;z-index:3;bottom:14px;left:0;right:0;display:flex;justify-content:center;gap:9px}
+.carousel-dot{width:9px;height:9px;padding:0;border:0;border-radius:50%;background:#ffffff88;cursor:pointer}
+.carousel-dot.active{background:var(--cyan);width:24px;border-radius:9px}
+.photo-tag{position:relative;z-index:2;margin:-17px 14px 0;background:rgba(13,19,38,.96);border:1px solid var(--line);padding:12px 17px;border-radius:14px;box-shadow:0 15px 40px #0005}
+.photo-tag strong{display:block}.photo-tag small{color:var(--cyan);font-size:.72rem}.swipe-hint{text-align:center;color:var(--muted);font-size:.78rem;margin:12px 0 0}
+section{padding:70px 0}.section-head{margin-bottom:28px}.kicker{color:var(--cyan);text-transform:uppercase;letter-spacing:.15em;font-weight:900;font-size:.78rem}
+h2{font-size:clamp(2rem,4vw,3rem);line-height:1.1;letter-spacing:-.04em;margin:8px 0 12px}.sub{color:var(--muted);max-width:700px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:linear-gradient(145deg,rgba(21,29,52,.94),rgba(12,17,33,.94));border:1px solid var(--line);border-radius:20px;padding:23px}
+.card .icon{font-size:1.7rem}.card h3{margin:12px 0 7px}.card p{color:var(--muted);margin:0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:stretch}
+.quote{font-size:1.4rem;line-height:1.5;font-weight:800;letter-spacing:-.02em}
+.quote span{color:var(--cyan)}
+.skill-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:17px}
+.pill{border:1px solid rgba(154,123,255,.35);background:rgba(154,123,255,.09);padding:8px 12px;border-radius:99px;font-size:.88rem}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.gallery figure{margin:0;position:relative;overflow:hidden;border-radius:20px;border:1px solid var(--line);background:var(--panel);min-height:260px}
+.gallery img{display:block;width:100%;height:420px;object-fit:cover;transition:transform .45s}.gallery figure:hover img{transform:scale(1.035)}
+.gallery figcaption{position:absolute;bottom:0;left:0;right:0;padding:30px 18px 17px;background:linear-gradient(transparent,rgba(0,0,0,.8));font-weight:800}
+.resume{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.resume h3{margin-top:0}.resume ul{padding-left:20px;color:var(--muted)}.resume li{margin:7px 0}
+.contact-box{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;background:linear-gradient(120deg,rgba(88,230,255,.12),rgba(154,123,255,.12));border:1px solid var(--line);border-radius:24px;padding:28px}
+.contact-box p{color:var(--muted);margin:5px 0 0}.contact-links{display:flex;gap:10px;flex-wrap:wrap}
+footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:.9rem}.foot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.note{font-size:.88rem;color:var(--muted);margin-top:20px}
+@media(max-width:780px){.hero{grid-template-columns:1fr;gap:40px;padding:55px 0}.hero-copy{order:1}.hero-photo{order:0;max-width:330px}.hero-slide{height:400px}.grid{grid-template-columns:1fr 1fr}.about-grid,.resume{grid-template-columns:1fr}nav{gap:12px;font-size:.82rem}.nav{height:auto;min-height:68px;flex-wrap:wrap;padding:12px 0}.gallery img{height:330px}}
+@media(max-width:520px){nav{width:100%;justify-content:space-between;order:2}.grid,.gallery{grid-template-columns:1fr}.gallery img{height:360px}.contact-box{padding:22px}.hero-slide{height:390px}.carousel-arrow{width:40px;height:40px}}
+.whatsapp-btn{background:linear-gradient(100deg,#35e98b,#a2ffd0)!important;color:#062617!important;box-shadow:0 9px 28px #25d36630}
+.card,.contact-box{transition:transform .25s,border-color .25s}
+@media(hover:hover) and (pointer:fine){.card:hover{transform:translateY(-4px);border-color:#58e6ff55}}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="RDX Shadow home">RDX <span>SHADOW</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#gallery">Photos</a><a href="#resume">Resume</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="wrap hero" id="home">
+  <div class="hero-copy">
+    <div class="eyebrow">✦ Personal Portfolio</div>
+    <h1>I'm <em>RDX Shadow</em></h1>
+    <p class="lead"><strong>SK Ibrahim</strong> · Python Programmer · App Modder · Video Editor · Ethical Hacking Enthusiast</p>
+    <p class="lead">I believe in learning relentlessly, building with purpose, and turning bold ideas into real projects. Every challenge is a chance to improve; every project is a chance to create something meaningful.</p>
+    <div class="buttons"><a class="btn primary" href="#resume">Explore My Resume ↘</a><a class="btn" href="#gallery">View My Photos</a></div>
+  </div>
+  <div class="hero-photo">
+    <div class="hero-carousel" aria-label="RDX Shadow photo carousel">
+      <button class="carousel-arrow prev" type="button" aria-label="Previous photo">‹</button>
+      <div class="carousel-track" id="heroTrack">
+        <img class="hero-slide active" src="https://i.ibb.co/8LmbqSLv/IMG-20251231-221822-007.jpg" alt="RDX Shadow standing by the water" fetchpriority="high">
+        <img class="hero-slide" src="https://i.ibb.co/N2vgVgB3/IMG-20260321-161233.jpg" alt="RDX Shadow portrait selfie" loading="lazy">
+        <img class="hero-slide" src="https://i.ibb.co/B5TTJ14b/file-00000000af388211b5a548ca02fe6cc5.png" alt="SK Ibrahim resume poster" loading="lazy">
+      </div>
+      <button class="carousel-arrow next" type="button" aria-label="Next photo">›</button>
+      <div class="carousel-dots" aria-label="Choose photo">
+        <button type="button" class="carousel-dot active" aria-label="Show photo 1"></button>
+        <button type="button" class="carousel-dot" aria-label="Show photo 2"></button>
+        <button type="button" class="carousel-dot" aria-label="Show photo 3"></button>
+      </div>
+    </div>
+    <div class="photo-tag"><strong>SK Ibrahim · RDX Shadow</strong><small>FOCUSED · CREATIVE · ALWAYS LEARNING</small></div>
+    <p class="swipe-hint">← Swipe or use arrows to explore photos →</p>
+  </div>
+</section>
+
+<section id="about">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">A little about me</div><h2>Big goals. Quiet focus.<br>Relentless progress.</h2><p class="sub">Welcome to my corner of the internet — a place for my work, interests, skills, and journey.</p></div>
+  <div class="about-grid">
+   <div class="card"><div class="quote">“Don't wait for the perfect moment. <span>Learn, build, improve</span> — and make the moment count.”</div><p style="color:var(--muted);margin-top:16px">I value creativity, consistency, problem-solving, and the courage to keep moving forward. My goal is to grow my skills and create work that speaks for itself.</p></div>
+   <div class="card"><h3>My mindset</h3><p>Curious by nature and motivated by technology, I enjoy exploring how things work, finding smarter solutions, and polishing ideas until they become useful results. I stay open to learning and believe progress comes from practice.</p><div class="skill-list"><span class="pill">Growth mindset</span><span class="pill">Creative thinking</span><span class="pill">Problem-solving</span><span class="pill">Consistency</span></div></div>
+  </div>
+ </div>
+</section>
+
+<section id="skills">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">What I work with</div><h2>Skills & interests</h2><p class="sub">A snapshot of the technical skills and creative work listed in my resume.</p></div>
+  <div class="grid">
+   <article class="card"><div class="icon">⌘</div><h3>Python Programming</h3><p>Advanced scripting, automation, application development, debugging, and building practical software solutions.</p></article>
+   <article class="card"><div class="icon">⚙</div><h3>App Modding</h3><p>Application modification and modding tools, with attention to functionality and performance.</p></article>
+   <article class="card"><div class="icon">▶</div><h3>Video Editing</h3><p>Editing, cutting, effects, colour correction, and post-production for polished video content.</p></article>
+   <article class="card"><div class="icon">⌁</div><h3>Ethical Hacking</h3><p>Security-focused learning, vulnerability assessment, penetration-testing fundamentals, and secure coding practices.</p></article>
+   <article class="card"><div class="icon">✧</div><h3>Problem Solving</h3><p>Quick learning, troubleshooting, version control, and performance optimization.</p></article>
+   <article class="card"><div class="icon">✉</div><h3>Communication</h3><p>Client communication, project delivery, and a commitment to quality work.</p></article>
+  </div>
+ </div>
+</section>
+
+<section id="gallery">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">Photo gallery</div><h2>A few moments</h2><p class="sub">A personal photo gallery featuring the images you shared.</p></div>
+  <div class="gallery">
+   <figure><img src="https://i.ibb.co/8LmbqSLv/IMG-20251231-221822-007.jpg" alt="RDX Shadow near the lake" loading="lazy"><figcaption>RDX Shadow · Outdoors</figcaption></figure>
+   <figure><img src="https://i.ibb.co/N2vgVgB3/IMG-20260321-161233.jpg" alt="RDX Shadow selfie portrait" loading="lazy"><figcaption>SK Ibrahim · Portrait</figcaption></figure>
+  </div>
+  <p class="note">Images are hosted on ImgBB, so an internet connection is needed to display them.</p>
+ </div>
+</section>
+
+<section id="resume">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">Professional profile</div><h2>Resume snapshot</h2><p class="sub">Key details from my resume, presented in a clean, readable format.</p></div>
+  <div class="resume">
+   <article class="card"><h3>SK Ibrahim</h3><p style="color:var(--cyan);font-weight:800">Python Programmer | App Modder | Video Editor | Ethical Hacking Enthusiast</p><p style="color:var(--muted)">Skilled and detail-oriented, with a focus on Python programming, application modification, video editing, and security-minded software practices. A quick learner who is self-motivated and committed to delivering quality work.</p></article>
+   <article class="card"><h3>Core & technical skills</h3><ul><li><strong>Python:</strong> scripting, automation, application development</li><li><strong>App modding:</strong> application modification and modding tools</li><li><strong>Video editing:</strong> editing, cutting, colour correction, post-production</li><li><strong>Ethical hacking:</strong> vulnerability assessment, penetration-testing fundamentals, secure coding</li><li><strong>Other:</strong> version control, debugging, performance optimization, problem-solving, client communication</li></ul></article>
+  </div>
+  <div class="card" style="margin-top:18px">
+   <h3>Resume poster</h3>
+   <p style="color:var(--muted);margin-bottom:14px">You also shared this designed resume image. Open it in full size to view or save it.</p>
+   <a href="https://i.ibb.co/B5TTJ14b/file-00000000af388211b5a548ca02fe6cc5.png" target="_blank" rel="noopener">
+    <img src="https://i.ibb.co/B5TTJ14b/file-00000000af388211b5a548ca02fe6cc5.png" alt="SK Ibrahim resume poster" loading="lazy" style="display:block;width:100%;max-width:520px;margin:0 auto;border-radius:12px;border:1px solid var(--line)">
+   </a>
+  </div>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="wrap">
+  <div class="contact-box">
+   <div><div class="kicker">Let's connect</div><h2 style="margin-bottom:0">Have a project in mind?</h2><p>For professional enquiries and collaboration, reach out.</p></div>
+   <div class="contact-links"><a class="btn primary whatsapp-btn" href="https://wa.me/9874491235" target="_blank" rel="noopener">☘ Chat on WhatsApp ↗</a></div>
+  </div>
+  <p class="note">WhatsApp is my only contact option on this page. Please message for genuine and respectful enquiries.</p>
+ </div>
+</section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> RDX Shadow · SK Ibrahim</span><span>Built with ambition, curiosity & code.</span></div></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+(function(){
+  const track=document.getElementById('heroTrack');
+  if(!track) return;
+  const slides=Array.from(track.querySelectorAll('.hero-slide'));
+  const dots=Array.from(document.querySelectorAll('.carousel-dot'));
+  const prev=document.querySelector('.carousel-arrow.prev');
+  const next=document.querySelector('.carousel-arrow.next');
+  let index=0;
+  function goTo(i){
+    index=(i+slides.length)%slides.length;
+    track.scrollTo({left:slides[index].offsetLeft,behavior:'smooth'});
+    dots.forEach((dot,j)=>{dot.classList.toggle('active',j===index);dot.setAttribute('aria-current',j===index?'true':'false');});
+  }
+  prev.addEventListener('click',()=>goTo(index-1));
+  next.addEventListener('click',()=>goTo(index+1));
+  dots.forEach((dot,i)=>dot.addEventListener('click',()=>goTo(i)));
+  let timer;
+  track.addEventListener('scroll',()=>{
+    clearTimeout(timer);
+    timer=setTimeout(()=>{
+      const closest=slides.reduce((best,slide,i)=>Math.abs(slide.offsetLeft-track.scrollLeft)<Math.abs(slides[best].offsetLeft-track.scrollLeft)?i:best,0);
+      index=closest;
+      dots.forEach((dot,j)=>{dot.classList.toggle('active',j===index);dot.setAttribute('aria-current',j===index?'true':'false');});
+    },70);
+  },{passive:true});
+})();
+</script>
+</body>
+</html>
